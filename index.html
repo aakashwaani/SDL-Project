@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- Site Metas -->
+<title>Life Care</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Colors CSS -->
+<link rel="stylesheet" href="css/colors.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<!-- [if lt IE 9] -->
+</head>
+
+<body class="clinic_version">
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
+    </div>
+    <!-- END LOADER -->
+    <header>
+        <div class="header-top wow fadeIn">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <div class="right-header">
+                    <div class="header-info">
+                        <div class="info-inner">
+                            <span class="icontop"><img src="images/phone-icon.png" alt="#"></span>
+                            <span class="iconcont"><a href="tel:8600394350">8600394350</a></span>
+                        </div>
+                        <div class="info-inner">
+                            <span class="icontop"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="iconcont"><a data-scroll
+                                    href="mailto:info@yoursite.com">info@Lifecare.com</a></span>
+                        </div>
+                        <div class="info-inner">
+                            <span class="icontop"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom wow fadeIn">
+            <div class="container">
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars"
+                                aria-hidden="true"></i></button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a data-scroll href="#about">About us</a></li>
+                            <li><a data-scroll href="#service">Services</a></li>
+                            <li><a data-scroll href="#doctors">Doctors</a></li>
+                            <li><a data-scroll href="#price">Manage Appointment</a></li>
+                            <li><a data-scroll href="#testimonials">Made By</a></li>
+                            <li><a data-scroll href="#getintouch">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="price" class="section pr wow fadeIn" style="background-image:url('images/price-bg.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade in" id="tab1">
+                                        <div class="row text-center">
+                                            <div class="col-md-4">
+                                                <div class="pricing-table pricing-table-highlighted">
+                                                    <div class="pricing-table-header grd1">
+                                                        <h2>Cancel Appointment</h2>
+                                                        <h3></h3>
+                                                    </div>
+                                                    <div class="pricing-table-space"></div>
+                                                    <div class="pricing-table-text">
+                                                        <p>When a patient wants to cancel appointment please enter your
+                                                            email.</p>
+                                                    </div>
+                                                    <div class="pricing-table-features">
+                                                        <form action="/delete" method="POST">
+                                                            <div class="email">
+                                                                <input type="email" name="email">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="pricing-table-sign-up">
+                                                        <a href="#contact" data-scroll=""
+                                                            class="btn btn-light btn-radius btn-brd grd1 effect-1">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="pricing-table pricing-table-highlighted">
+                                                    <div class="pricing-table-header grd1">
+                                                        <h2>Book Appointment</h2>
+                                                        <h3></h3>
+                                                    </div>
+                                                    <div class="pricing-table-space"></div>
+                                                    <div class="pricing-table-text">
+                                                        <p>If you wish to change your appointment feel free to do so
+                                                            we'll manage it :)</p>
+                                                    </div>
+                                                    <div class="pricing-table-features">
+                                                        <form action="book.py" method="post">
+                                                            <fieldset>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <input type="text" id="name"
+                                                                                placeholder="Your Name" name="name1" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <input type="email"
+                                                                                placeholder="Email Address" id="email"
+                                                                                name="email1" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <input type="date" id="date"
+                                                                                value="2019-10-21" name="date1" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <select class="form-control" id="doctor"
+                                                                                name="doctor1">
+                                                                                <option value="Amit" selected>Amit
+                                                                                </option>
+                                                                                <option value="Sumit">XYZ</option>
+                                                                                <option value="Shubham">ABC</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <textarea rows="4" id="textarea_message"
+                                                                                class="form-control"
+                                                                                placeholder="Your Message..."
+                                                                                name="text"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="center"><button type="submit"
+                                                                                    value="Submit">Book</button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="pricing-table pricing-table-highlighted">
+                                                    <div class="pricing-table-header grd1">
+                                                        <h2>Search Appointment</h2>
+                                                        <h3></h3>
+                                                    </div>
+                                                    <div class="pricing-table-space"></div>
+                                                    <div class="pricing-table-text">
+                                                        <p>You can search for your appointments and check all the
+                                                            information entered.</p>
+                                                    </div>
+                                                    <div class="pricing-table-features">
+                                                        <form action="/detail" method="POST">
+                                                            <div class="email">
+                                                                <input type="email" name="email">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="pricing-table-sign-up">
+                                                        <a href="#contact" data-scroll=""
+                                                            class="btn btn-light btn-radius btn-brd grd1 effect-1">SEARCH</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                                <!-- end pane -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
